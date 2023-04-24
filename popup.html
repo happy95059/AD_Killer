@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<title>extension</title>
+<style type = "text/css">
+    body {  
+        width: 500px;
+    }
+    .button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 12px;
+    border: 0px solid #a12727;
+    border-radius: 100px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    -webkit-box-shadow: #ff5959 0px 0px 40px 0px;
+    -moz-box-shadow: #ff5959 0px 0px 40px 0px;
+    box-shadow: #ff5959 0px 0px 40px 0px;
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 5px times new roman;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#b62f2f));
+    background: -moz-linear-gradient(top, #ff5959, #b62f2f);
+    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#982727));
+    background: -moz-linear-gradient(top, #982727, #982727);
+    background: linear-gradient(to bottom, #982727, #982727);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: -2px;
+    left: 5px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABzklEQVRIiaWVv0oDQRDGfwYRSRFSyBWKjciRKrWkssgj+Ahi4RNZ2EiKFCFFqryCEHyE2AgpbEKagEYuFjuTm53shRMHJre78307f3Z2A9CoqTfAh+jNH3jhp8poxmNgKzquwOyNjymlMIDUuGmwzRr4BlBYB1bOgEfgE3gGfipwx8A9kAFPgvcB75WlA8wpy/Eg61OzNpW1B7M2F260n9aqEM2EfGUiubDRuAgvzPxKuJnBF5qBficmoi3wJgQSGSC2N8eZEB/0bnKb2Lxt7KkSNQTjndxaJ+rJtuEXkNsoKjJQfi4ctY98Bk1gZQAv7MshBwhH7SvZc2e8BlqGZOuoujb2NXGd9fxUWoRD35WoT1zDrosO9p8Kn0HX7dGHcFFSUrgvwCtweQCbFPW+cOt6wH/R3O2xwJToFFhSpjdwAdQZDwx/KXtGgKEBbAjXvq50hKP8oTWqgx7xIfmLVqVtYOa4PWOPWm3kgDOTSaoseWJzvWQND4bwtswdYUOo7x2hFbsyHriy6Iua4cT/E+UJJ3V0Trr7ogx0niXKdUhHwkl2mndg13uEjrAtbFtxSHmgSTmi/B+tBAEnhLflXOYL4B34PsCJIq2a/3v8C9oGt9GXOBM8AAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+    </style>
+ <meta charset="utf-8">  
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css">  
+ <link rel="stylesheet" type="text/css" href="extension.css">  
+
+ 
+</head>
+<body>
+    <div class="row demo-tiles">  
+        <div class="col-xs-3">  
+            <div class="tile">  
+                <img src="image/Pastetooth128.png"  class="tile-image big-illustration">  
+                <h3 class="tile-title">AD KilL</h3>  
+                <p>19公分不含投</p>  
+            
+                <div class='popuptest'><buttom class="button" 
+                style="position:relative; left:180px; bottom: 200px;" id="power"></button> </div>
+                <h4 style="position:relative; left:180px; bottom: 160px; ">開機/關機</h4>
+                <p class='show' id=""></p>
+
+                <div class="content"> 豁免名單<input type="text" id="Address">
+                <button type="button" style="width:80px;height:40px;font-size:10px" id="create">新增</button>
+                <button type="button" style="width:80px;height:40px;font-size:10px" id="delete">刪除</button></div>
+                    
+                        
+                <button type="button" style="width:40px;height:20px;font-size:10px;position:absolute;left:40px" id="txt">名單</button>
+                <span  id="web-address">不可能</span>
+                        
+                    
+
+                    <!--最後一行 =====================================================-->
+                    <script type="text/javascript" src="popup.js"></script> 
+    </body>
+
+    </html>
